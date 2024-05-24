@@ -8,9 +8,6 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/blossom
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # OTA
 TARGET_OTA_ASSERT_DEVICE := dandelion,angelica,angelican,cattail,angelicain,blossom
 
@@ -36,6 +33,12 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
+# ART
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 TARGET_BOOTLOADER_BOARD_NAME := blossom
@@ -50,6 +53,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_blossom
 TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_blossom
+
+# Jemalloc
+MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := blossom_defconfig # no file, only make build system happy
@@ -86,6 +93,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += kpti=off
+BOARD_KERNEL_CMDLINE += quiet loglevel=3
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -131,9 +139,6 @@ TARGET_SCREEN_DENSITY := 320
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-
-# Vibrator
-TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 
 # Power
 TARGET_POWERHAL_AIDL_VERSION := 1
