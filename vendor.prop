@@ -190,7 +190,11 @@ debug.sf.early.sf.duration=27600000
 debug.sf.early.app.duration=20000000
 debug.sf.earlyGl.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+debug.sf.disable_client_composition_cache=1
 vendor.display.use_smooth_motion=1
+persist.wm.enable_remote_keyguard_animation=0
 
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
