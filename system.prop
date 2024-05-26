@@ -100,5 +100,3 @@ media.stagefright.enable-record=true
 ro.media.enc.jpeg.quality=100
 ro.media.dec.aud.wma.enabled=1
 ro.media.dec.vid.wmv.enabled=1
-
-
