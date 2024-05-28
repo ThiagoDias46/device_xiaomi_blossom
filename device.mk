@@ -415,8 +415,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Runtime Resource Overlays
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlayBlossom \
+PRODUCT_PACKAGES += \    
     DialerOverlayBlossom \
     FrameworksResOverlayBlossom \
     SettingsOverlayBlossom \
