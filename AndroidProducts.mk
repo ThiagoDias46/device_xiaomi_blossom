@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_blossom.mk
+    $(LOCAL_DIR)/droidx_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_blossom-user \
-    afterlife_blossom-userdebug \
-    afterlife_blossom-eng
+    droidx_blossom-user \
+    droidx_blossom-userdebug \
+    droidx_blossom-eng
 
