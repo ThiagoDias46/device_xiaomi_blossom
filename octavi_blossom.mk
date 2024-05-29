@@ -14,9 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
 $(call inherit-product, device/xiaomi/blossom/device.mk)
 
 # Inherit some common BlissOS stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/octavi/config/common.mk)
 
-PRODUCT_NAME := banana_blossom
+PRODUCT_NAME := octavi_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

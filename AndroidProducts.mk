@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_blossom.mk
+    $(LOCAL_DIR)/octavi_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_blossom-user \
-    banana_blossom-userdebug \
-    banana_blossom-eng
+    octavi_blossom-user \
+    octavi_blossom-userdebug \
+    octavi_blossom-eng
 
