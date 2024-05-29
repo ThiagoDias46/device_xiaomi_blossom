@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_blossom.mk
+    $(LOCAL_DIR)/afterlife_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_blossom-user \
-    octavi_blossom-userdebug \
-    octavi_blossom-eng
+    afterlife_blossom-user \
+    afterlife_blossom-userdebug \
+    afterlife_blossom-eng
 
