@@ -11,6 +11,17 @@ Build.BRAND=MTK
 ro.camera.sound.forced=0
 
 # Dalvik
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+pm.dexopt.ab-ota=speed-profile
+dalvik.vm.dex2oat-cpu-set=4,5,6,7
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.boot-dex2oat-cpu-set=4,5,6,7
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
+dalvik.vm.image-dex2oat-threads=4
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
@@ -77,5 +88,17 @@ ro.zram.periodic_wb_delay_hours=24
 # Zygote
 ro.zygote.preload.enable=0
 
-# LowRam
-ro.config.low_ram=true
+# Memory Management
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000
+ro.am.reschedule_service=true
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=8
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=32
+ro.config.sdha_apps_bg_min=8
