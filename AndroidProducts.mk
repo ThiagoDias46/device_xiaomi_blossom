@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_blossom.mk
+    $(LOCAL_DIR)/banana_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_blossom-user \
-    havoc_blossom-userdebug \
-    havoc_blossom-eng
+    banana_blossom-user \
+    banana_blossom-userdebug \
+    banana_blossom-eng
 
