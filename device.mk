@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
     BesLoudness \
     MtkInCallService
 
+# Camera
+PRODUCT_PACKAGES += \
+    CameraGo
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
