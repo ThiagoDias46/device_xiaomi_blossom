@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_blossom.mk
+    $(LOCAL_DIR)/lineage_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_blossom-user \
-    droidx_blossom-userdebug \
-    droidx_blossom-eng
+    lineage_blossom-user \
+    lineage_blossom-userdebug \
+    lineage_blossom-eng
 
