@@ -168,7 +168,6 @@ ro.vendor.md_auto_setup_ims=1
 ro.vendor.md_log_memdump_wait=15
 ro.vendor.md_prop_ver=1
 ro.vendor.mtk_c2k_lte_mode=0
-ro.vendor.mtk_c2k_support=0
 ro.vendor.mtk_data_config=1
 ro.vendor.mtk_dmc_support=1
 ro.vendor.mtk_eccci_c2k=1
@@ -178,7 +177,6 @@ ro.vendor.mtk_external_sim_support=1
 ro.vendor.mtk_lte_support=1
 ro.vendor.mtk_mapi_support=1
 ro.vendor.mtk_md1_support=9
-ro.vendor.mtk_md3_support=0
 ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_modem_monitor_support=1
 ro.vendor.mtk_protocol1_rat_config=Lf/Lt/W/G
@@ -195,7 +193,6 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_refresh_reset_by_modem=1
 ro.vendor.system.mtk_mapi_support=1
 telephony.active_modems.max_count=2
-telephony.lteOnCdmaDevice=1
 
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
