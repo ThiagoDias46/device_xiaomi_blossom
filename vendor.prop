@@ -8,6 +8,7 @@ ro.vendor.have_aeev_feature=0
 debug.mtk_tflite.target_nnapi=29
 
 # Audio
+ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V2.2
@@ -28,6 +29,12 @@ bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 ro.vendor.mtk.bt_sap_enable=true
+
+# Brightness curve
+persist.sys.brightness.low.gamma=true
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
 
 # Camera
 camera.disable_zsl_mode=1
@@ -64,6 +71,7 @@ ro.vendor.mtk_fd_support=1
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 persist.vendor.max.brightness=413
 ro.hardware.egl=meow
+ro.hardware.vulkan=mali
 ro.opengles.version=196610
 
 # DRM
@@ -75,6 +83,9 @@ persist.vendor.connsys.fm_chipid=mt6631
 
 # FRP
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
 
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
@@ -90,13 +101,14 @@ ro.vendor.mtk_wappush_support=1
 persist.vendor.ims_support=1
 persist.vendor.mims_support=2
 persist.vendor.mtk.volte.enable=1
-persist.vendor.mtk_ct_volte_support=1
+persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.mtk_wfc_support=1
-persist.vendor.vilte_support=1
+persist.vendor.vilte_support=0
 persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
+persist.dbg.ims_volte_enable=1
 
 # Keymaster
 ro.hardware.kmsetkey=beanpod
@@ -132,8 +144,8 @@ ro.vendor.mtk_exchange_support=1
 ro.vendor.pref_scale_enable_cfg=1
 
 # PQ
-ro.vendor.mtk_pq_color_mode=1
-ro.vendor.mtk_pq_support=2
+ro.vendor.mtk_pq_color_mode=0
+ro.vendor.mtk_pq_support=0
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -156,6 +168,7 @@ ro.vendor.md_auto_setup_ims=1
 ro.vendor.md_log_memdump_wait=15
 ro.vendor.md_prop_ver=1
 ro.vendor.mtk_c2k_lte_mode=0
+ro.vendor.mtk_c2k_support=0
 ro.vendor.mtk_data_config=1
 ro.vendor.mtk_dmc_support=1
 ro.vendor.mtk_eccci_c2k=1
@@ -165,6 +178,7 @@ ro.vendor.mtk_external_sim_support=1
 ro.vendor.mtk_lte_support=1
 ro.vendor.mtk_mapi_support=1
 ro.vendor.mtk_md1_support=9
+ro.vendor.mtk_md3_support=0
 ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_modem_monitor_support=1
 ro.vendor.mtk_protocol1_rat_config=Lf/Lt/W/G
@@ -181,6 +195,7 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_refresh_reset_by_modem=1
 ro.vendor.system.mtk_mapi_support=1
 telephony.active_modems.max_count=2
+telephony.lteOnCdmaDevice=1
 
 # SurfaceFlinger
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
@@ -202,14 +217,23 @@ debug.sf.predict_hwc_composition_strategy=0
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
 
+# traced
+persist.traced.enable=0
+
+# Suspend
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
 # Userspace Reboot
 init.userspace_reboot.is_supported=true
 
 # WiFi
 persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=0
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
-ro.vendor.connsys.dedicated.log=1
+ro.vendor.connsys.dedicated.log=0
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=1
 ro.vendor.wfd.iframesize.level=0
@@ -217,6 +241,11 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.gen=gen4m
 vendor.connsys.driver.ready=no
 wifi.concurrent.interface=ap0
+
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=2
 
 # Zygote
 zygote.critical_window.minute=10
