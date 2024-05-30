@@ -2,7 +2,6 @@
 audio.chk.cal.spk=0
 audio.chk.cal.us=0
 ro.audio.silent=0
-ro.config.vc_call_vol_steps=9
 
 # Brand
 Build.BRAND=MTK
@@ -35,11 +34,6 @@ vendor.display.enable_default_color_mode=0
 # GPU
 ro.opengles.version=196610
 
-# Graphics
-debug.cpurend.vsync=false
-debug.hwui.skia_atrace_enabled=false
-debug.renderengine.backend=skiaglthreaded
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
@@ -51,9 +45,6 @@ ro.kernel.zio=38,108,105,16
 sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 
-# Keylayout
-qemu.hw.mainkeys=0
-
 # Perf
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
@@ -62,9 +53,7 @@ ro.mtk_perf_simple_start_win=1
 # RIL
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
-
-# SurfaceFlinger
-service.sf.prime_shader_cache=0
+persist.sys.fflag.override.settings_provider_model=false
 
 # USB
 ro.sys.usb.bicr=no
@@ -79,11 +68,6 @@ ro.mediatek.wlan.wsc=1
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
-
-# ZRAM
-ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=180
-ro.zram.periodic_wb_delay_hours=24
 
 # Zygote
 ro.zygote.preload.enable=0
